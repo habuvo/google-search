@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Binary
+mcp-internet-search
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.sum
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
