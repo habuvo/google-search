@@ -12,7 +12,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/joho/godotenv"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 )
@@ -63,12 +62,6 @@ func main() {
 
 // loadConfig loads and validates the application configuration.
 func loadConfig() (*Config, error) {
-	// Load environment variables from .env file
-	err := godotenv.Load()
-	if err != nil {
-		log.Println("Warning: .env file not found. Using environment variables.")
-	}
-
 	// Check for required environment variables
 	apiKey := os.Getenv("GOOGLE_API_KEY")
 	searchEngineID := os.Getenv("GOOGLE_SEARCH_ENGINE_ID")
