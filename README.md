@@ -24,9 +24,9 @@ This is an MCP (Model Context Protocol) server that provides a Google Custom Sea
    cd mcp-internet-search
    ```
 
-2. Update a `env` chapter of your MCP servers `settings.json`:
+3. Edit the `.env` file and add your Google API credentials (for testing purposes)
 
-3. Edit the `.env` file and add your Google API credentials:
+2. Update a `env` chapter of your MCP servers `settings.json`:
 
 ```
 {
